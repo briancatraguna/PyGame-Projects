@@ -13,7 +13,7 @@ score = 0
 def draw():
     global message,score
     screen.clear()
-    screen.fill(color=(128,0,0))
+    screen.blit("background",(0,0))
     alien.draw()
     screen.draw.text(message,center=(400,40),fontsize=60)
     screen.draw.text("Score: {}".format(score),center=(50,550),fontsize=30)
